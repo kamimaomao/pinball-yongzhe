@@ -1,0 +1,10 @@
+{
+  "name": "pinball-yongzhe",
+  "compatibility_date": "2026-11-24",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  }
+}

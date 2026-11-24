@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#151929" />
+    <title>弹珠勇者 · 弹夹撞击闯关录</title>
+    <link rel="icon" type="image/png" href="./assets/textures/角色/role/role_2.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- 角色详情、颜艺预览、升级突破与派驻弹窗（原生 <dialog closedby="any">） -->
+    <dialog id="hero-modal" class="yz-dialog" closedby="any" aria-labelledby="hero-modal-title">
+      <div class="yz-dialog-box" id="hero-modal-content"></div>
+    </dialog>
+
+    <!-- 编队槽位换将弹窗 -->
+    <dialog id="picker-modal" class="yz-dialog" closedby="any" aria-labelledby="picker-modal-title">
+      <div class="yz-dialog-box" id="picker-modal-content"></div>
+    </dialog>
+
+    <!-- 璀璨宝箱开启与神话合成揭晓弹窗 -->
+    <dialog id="gacha-modal" class="yz-dialog" closedby="any" aria-labelledby="gacha-modal-title">
+      <div class="yz-dialog-box" id="gacha-modal-content"></div>
+    </dialog>
+
+    <!-- 战斗结算 / 暂停弹窗（防误触点空白关闭，使用 closedby="closerequest"） -->
+    <dialog id="result-modal" class="yz-dialog" closedby="closerequest" aria-labelledby="result-modal-title">
+      <div class="yz-dialog-box" id="result-modal-content"></div>
+    </dialog>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
